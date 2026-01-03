@@ -1,0 +1,25 @@
+# MCP Azure Smart Notes
+
+An MCP (Model Context Protocol) server that exposes an Azure OpenAI–powered
+text summarization tool.
+
+## Features
+-Azure OpenAI integration
+-MCP tool: summarize_text
+-Lazy-loaded LLM client
+-Environment-based configuration
+
+## Project Structure
+-server/azure_client.py — Azure OpenAI client
+-server/tools.py — MCP tool definitions
+-server/mcp_server.py — MCP server entrypoint
+-test_local.py — local Azure summarization test
+
+## Setup
+1.Create .env with Azure OpenAI credentials
+2.Create virtual environment
+3.Install dependencies
+
+## Local Test (Azure only)
+```bash
+python test_local.py
